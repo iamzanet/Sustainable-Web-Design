@@ -13,40 +13,18 @@ ol.index>li {
 }
 ol.index>li::before {
 	content: counters(item, ".") " ";
-	padding-left: 40px;
 }
-ul {
-	padding-left: 80px;
-}
-article {
-	padding-left: 40px;
-}
-h1 {
-	padding-left: 40px;
-}
-h2 {
-	padding-left: 40px;
-}
-h3 {
-	padding-left: 40px;
-}
-h4 {
-	padding-left: 40px;
-}
-p {
-	padding-left: 40px;
-}
-table {
-	padding-left: 40px;
-}
+
 .quote {
 	padding-left: 30px;
 }
-.bibliography {
-	font-size: 10px;
+#switch {
+	position: absolute;
+	top: 30px;
+	right: 30px;
 }
-.LCA {
-	width: 300px;
+#bibliography {
+	font-size: 10px;
 }
 .column {
 	width: 120px;
@@ -68,6 +46,8 @@ html * {
 </style>
 </head>
 <body>
+	<div id="switch">
+	<a href="sustainableweb-light.html">Light mode</a></div>
 <h1> <b>How to build websites (more) sustainably </b></h1>
 <p> by Zaneta Vaskova</p>
 <br>
@@ -323,7 +303,8 @@ html * {
   <p>2. Estimating what is possible – The benchmark established shows what has currently been achieved, but not what is theoretically possible. It is important to estimate what is theoretically possible in a best-case scenario.</p>
   <p>3. Setting the budget – When the current best practice and the theoretical best-case scenario in a given sector is known, a budget for the chosen metrics can be set. If the best in the industry is close to the theoretical best case, there might not be enough room for improvement, but if there is a huge gap between these two figures, then new standards for the sector can be set. The budget for each metric should be achievable.</p>
   <p>4. Setting a stretch goal – This is a goal that exceeds the budget and pushes the product creator to deliver higher levels of efficiency. Achieving it is a challenge which comes with difficulties but is theoretically possible.</p>
-  <br>
+  <br></article>
+	<article id="ch.1.3.1">
   <h3> Tools and resources</h3>
   <p>This section provides an overview of tools for measuring web impact and checking for green hosting.</p>
   <br>
@@ -452,7 +433,7 @@ html * {
   <p>Therefore, reducing the number of elements on a page is not only a more sustainable option, but also possibly more profitable.</p>
   <p>In addition to reducing the number of elements on the page, designers should also reduce the number of “special effects”. Extensive use of animations, transforms, image carousels or parallax effects should be avoided as these are very energy intensive features. Greenwood notes that using a carousel instead of static images increases peak CPU usage by 7%, and a fade-in effect on page load increased peak CPU usage by 22%.(90) Apple’s showcase page for the iPhone 13 (https://www.apple.com/iphone-13/), is a good example of an extensive use of such effects. The result is an overwhelming and very polluting webpage.</p>
 	<br></article>
-	<article id="2.3.1">
+	<article id="ch2.3.1">
   <h3>Text</h3>
   <p>The most environmentally friendly element of a website is text. Well written copy should be accompanied by good formatting to support users scanning the text and finding the right information. Proper formatting, such as using different heading sizes, splitting text into smaller, shorter paragraphs, highlighting keywords etc., is necessary for good readability and legibility.</p>
   <p>In recent years, text is largely being overshadowed by the extensive use of images and videos, which are the most polluting elements of the web. It is often presumed by web owners and creators, that images are more powerful communicating a message than text. McGovern gives a comparison of text and images in terms of total size:</p>
@@ -476,7 +457,7 @@ html * {
 	</article>
 	
   <br>
-	<article id="2.3.2">
+	<article id="ch2.3.2">
   <h3>Images</h3>
   <p>Images play a critical role in storytelling, but since they largely contribute to websites’ footprint, they should be used sparingly and be as compressed and optimized as possible. As mentioned in chapter 1.2, images account for about 50% of the average page size (Fig 1.6). Greenwood writes that: “According to HTTP Archive, the median number of images on any webpage is approximately thirty, with a total transfer size of 1 MB—equivalent to one hundred fifty thousand words of lorem ipsum in an HTML file.”(93) </p>
   <p>Extensive use of images seems to be not optimal for generating conversions. According to Google, the number of images on a page is the second biggest predicator of conversions. Sessions that converted users had 38% fewer images than sessions that didn't convert.(94) Pages that converted had an average of 19 images per page, whereas those without conversion did not, had an average of 31 images. </p>
@@ -522,7 +503,7 @@ html * {
     <li>Images properly sized for screen resolution (Responsive images)</li>
   </ul>
 		</article>
-	<article id="2.3.3">
+	<article id="ch2.3.3">
   <br>
   <h3> Video</h3>
   <p>The use of video across the web is exploding. Over 80% of internet traffic is caused by video streaming.(101) Video content is in high demand, as can be observed on social media platforms such as Instagram or TikTok, in online advertising and also the rise of streaming services such as YouTube, Netflix, Amazon Prime Video, Apple TV, Disney+, HBO Max etc. From sustainability perspective, video is the single most polluting element of the web, because of its immense size. McGovern writes about the impact of video files versus text: “A 30-second video can easily weigh 3 MB, so one second of video costs 300 KB. 1,000 words of text is about 6 KB. Therefore, one second of video has as much impact on the environment as 50,000 words of text.”(102) </p>
@@ -551,7 +532,7 @@ html * {
   </ul>
 		</article>
   <br>
-	<article id="2.3.4">
+	<article id="ch2.3.4">
   <h3>Colours</h3>
   <p>When it comes to colours, there are multiple ways to reduce carbon footprint of a page. One of the practices that has gained a big significance in the last years is the use of darker colours or dark mode. Since most modern smart phones, laptops and TVs are equipped with an OLED (organic light-emitting diode) screens, which illuminate each pixel individually, the use of darker colours in user interface has become energy efficient again. That was not the case with LCD displays, where the entire panel needs to be lit and the light source is shining at 100% the whole time. With OLED screens power only goes to the LEDs that need it and pixels can be turn off completely when there is black in the picture, or shine less where there are darker colours.</p>
   <p>According to Google’s research, the screen itself is one of the biggest drains on battery, so by using darker colours designers could minimize the screen's power usage. They also found that using Google Maps in night mode caused the display's power usage to fall by 63 percent compared to the normal bright mode. Night mode didn't use any less power on an iPhone 7 with an LCD screen.(106) </p>
@@ -565,7 +546,7 @@ html * {
   </ul>
   <br>
 		</article>
-	<article id="2.3.5">
+	<article id="ch2.3.5">
   <h3>Fonts</h3>
   <p>Fonts can also have an influence on the environmental impact of a website, as they can be a significant portion of data transfer. According to McGovern they take up around 3% of data transfer on an average website.(108) The most energy efficient option for designers is to use a system font, as they are installed on user’s devices and therefore, do not require any data to load.</p>
   <p>In many web projects, the use of custom fonts cannot be easily avoided, for example because of company branding. Custom font use has been on the rise since 2011 where support for custom fonts was supported across the big four browsers; Internet Explorer, Chrome, Safari and Firefox. As a result, custom font use has grown by 850% between 2011 and 2018.(109) </p>
@@ -773,8 +754,8 @@ html * {
 	</article>
 	<article id="ch2.5.2">
   <h3>Shared servers</h3>
-  <p>“Sharing is caring!”
-    A popular idiom</p>
+  <p>“Sharing is caring!”</p>
+   <p> A popular idiom</p>
   <br>
   <p>Sharing a server, which otherwise would have been under-utilized, means caring for the environment. Most hosting providers offer this option. Shared (virtual) hosting is a way to host your website on a single physical server that also hosts other websites. Shared hosting takes advantage of a server’s optimal utility, as each website receives different amounts of traffic at different times. Since energy is being used by the servers even when it is not being used, shared hosting is a viable option for better sustainability. </p>
   <p>Asim Hussain, a green cloud advocate at Microsoft, argues that “the more you do use hardware, the more efficient it becomes.”(158) But there needs to be balance in the load of the servers. Greenwood writes:</p>

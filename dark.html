@@ -18,10 +18,13 @@ ol.index>li::before {
 	padding-left: 30px;
 }
 #switch {
-	position: absolute;
 	top: 30px;
 	right: 30px;
-	font-size: 30px;
+	font-size: 30px;	
+	position: -webkit-sticky;
+	position: sticky;
+	z-index: 100;
+	text-align: right;
 }
 #bibliography {
 	font-size: 10px;
